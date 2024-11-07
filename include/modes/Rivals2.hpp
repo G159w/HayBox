@@ -7,11 +7,11 @@
 
 class Rivals2 : public ControllerMode {
   public:
-    Rivals2(socd::SocdType socd_type);
+    Rivals2();
 
   private:
-    void UpdateDigitalOutputs(InputState &inputs, OutputState &outputs);
-    void UpdateAnalogOutputs(InputState &inputs, OutputState &outputs);
+    void UpdateDigitalOutputs(const InputState &inputs, OutputState &outputs);
+    void UpdateAnalogOutputs(const InputState &inputs, OutputState &outputs);
 };
 
 #endif
